@@ -3,20 +3,28 @@
 /**
  * main - Entry point
  *
- * Description: Print the alphabet in lowercase
+ * Description: print all alphapet in lower and upper case
  *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char letter = 'a';
+ * Return: Always 0 (success)
+*/
 
-	while (letter <= 'z')
-	{
-		putchar(letter);
-		letter++;
-	}
-	putchar('\n');
+int main(void) {
+    char ch = 'a';
+    char letter = 'A';
 
-	return (0);
+    while (ch <= 'z')
+    {
+        putchar(ch);
+        ch++;
+    }
+
+    while (letter <= 'Z')
+    {
+      putchar(letter);
+      letter++;
+    }
+
+    putchar('\n');
+
+    return 0;
 }
