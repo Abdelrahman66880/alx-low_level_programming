@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: Print the value of n: greater than, is zero, and is not less than (6).
+ * Description: greater than 5, is zero, or less than 6 and not zero.
  *
  * Return: Always 0 (success)
 */
