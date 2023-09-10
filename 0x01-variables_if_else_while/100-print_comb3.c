@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -10,30 +12,28 @@ int main(void)
 {
 	int digit1 = 0, digit2;
 
-    	while (digit1 <= 9)
+	while (digit1 <= 9)
 	{
-        	digit2 = 0;
+		digit2 = 0;
 		while (digit2 <= 9)
 		{
 			if (digit1 != digit2 && digit1 < digit2)
 			{
-                		putchar(digit1 + '0');
-                		putchar(digit2 + '0');
+				putchar(digit1 + '0');
+				putchar(digit2 + '0');
 
-                		if (digit1 + digit2 != 17)
-                		{
-                    			putchar(',');
-                    			putchar(' ');
-                		}
-            		}
-
-            	digit2++;
-        	}
-
-        	digit1++;
+				if (digit1 + digit2 != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			digit2++;
+		}
+		digit1++;
 	}
 
-    	putchar('\n');
+	putchar('\n');
 
-    	return (0);
+	return (0);
 }
