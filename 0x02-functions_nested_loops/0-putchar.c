@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: print _putchar
+ * Description: Prints "_putchar" followed by a newline.
  *
  * Return: Always 0 (success)
  */
@@ -17,7 +17,7 @@ int main(void)
 		_putchar(str[ch]);
 	}
 
-	_putchar('\n);
+	_putchar('\n');
 
 	return (0);
 }
