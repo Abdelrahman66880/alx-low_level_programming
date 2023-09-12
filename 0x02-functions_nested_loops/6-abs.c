@@ -13,10 +13,10 @@ int _abs(int c)
 if (c <= 0)
 {
 int result = c * -1;
-_putchar(result + 48);
+return (result);
 }
 else
 {
-_putchar(c + 48);
+return (c);
 }
 }
