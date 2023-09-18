@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -5,21 +6,17 @@
  * followed by a new line
  * @a: array to be printed
  * @n: number of elements to print
-*/
-
+ */
 void print_array(int *a, int n)
 {
-	int nums = 0;
+	int i;
 
-	for (int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		nums++;
-		printf("%i", a[i]);
-		if (nums < n)
-		{
-			printf(",");
-			printf(" ");
-		}
+		if (i == 0)
+			printf("%d", a[i]);
+		else
+			printf(", %d", a[i]);
 	}
-	printf("\n");
+		printf("\n");
 }
